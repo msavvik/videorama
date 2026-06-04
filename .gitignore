@@ -1,0 +1,5 @@
+/.local
+/.vscode
+/node_modules
+*:Zone.Identifier
+src/test

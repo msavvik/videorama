@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/src/style/common.css">
+  <link rel="stylesheet" href="/src/style/kinematoscope.css">
+  <link rel="stylesheet" href="/src/style/controls.css">
+</head>
+
+<body>
+  <table id="UiDepthMap" class="controls-table">
+    <thead>
+      <tr>
+        <th colspan="3">
+          <strong>NodeDepthMap</strong>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- control description -->
+      <tr>
+        <td>&emsp;<b>m / M:</b>&emsp;</td>
+        <td>depth map range toggle [min, max]:&emsp;</td>
+        <td>
+          <span id="depthRange-config"></span>
+          &emsp;
+        </td>
+      </tr>
+
+      <tr>
+        <td class="options-table-row-separator"></td>
+      </tr>
+
+      <!-- control values -->
+      <tr>
+        <td>&emsp;</td>
+        <td>depth range:&emsp;</td>
+        <td>
+          <span id="depthRange"></span>
+          &emsp;
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.controls-overlay-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  color: red;
+  border-width: 3px;
+  border-style: solid;
+  border-color: red;
+}
+
+.controls-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  border-width: 0px;
+  color: yellow;
+  border-color: yellow;
+}

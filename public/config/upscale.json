@@ -1,0 +1,8 @@
+{
+  "mediaSource": ["/media/dance/dance.json"],
+  "modelSource": [
+    "/model/quicksrnet/x4_quicksrnet_large.json",
+    "/model/sesr_m5/x4_sesr_m5.json",
+    "/model/xlsr/x4_xlsr.json"
+  ]
+}

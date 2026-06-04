@@ -1,0 +1,27 @@
+{
+  "mediaSource": ["/media/peru/peru.json"],
+  "modelSource": [
+    "/model/depth_anything_v1_small/depth_anything_v1_vits_dynamic.json",
+    "/model/depth_anything_v1_base/depth_anything_v1_vitb_dynamic.json",
+    "/model/depth_anything_v2_small/depth_anything_v2_vits_dynamic.json",
+    "/model/depth_anything_v2_base/depth_anything_v2_vitb_dynamic.json",
+    "/model/depth_anything_v3_small/depth_anything_v3_vits_dynamic.json",
+    "/model/depth_anything_v3_base/depth_anything_v3_vitb_dynamic.json",
+    "/model/midas_v2.1_small/midas_v2.1_small.json",
+    "/model/midas_v3.1_dpt_swin2_tiny/midas_v3.1_dpt_swin2_tiny.json"
+  ],
+  "renderer": [
+    {
+      "name": "Parallax",
+      "id": "PipelineParallax"
+    },
+    {
+      "name": "Side by side",
+      "id": "PipelineStereoSideBySide"
+    },
+    {
+      "name": "Frame switch",
+      "id": "PipelineStereoSwitching"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style/common.css" />
+    <link rel="stylesheet" href="/style/kinematoscope.css" />
+    <link rel="stylesheet" href="/style/controls.css" />
+  </head>
+
+  <body>
+    <h2>Kinematoscope</h2>
+
+    <!-- controls -->
+    <div id="options-section" class="outline">
+      <h3>options:</h3>
+      <div id="options-container"></div>
+      <br />
+      <div id="url-source-container"></div>
+      <br />
+      <div>
+        <button id="start">start</button>
+        <button id="stop" disabled="true">stop</button>
+      </div>
+    </div>
+
+    <!-- input -->
+    <div id="input-section" class="outline">
+      <h3>source:</h3>
+      <div id="input-container" class="horizontal-layout input-view"></div>
+    </div>
+
+    <!-- debug -->
+    <div id="debug-section" class="outline">
+      <h3>debug:</h3>
+      <input id="debug-visible" type="checkbox" class="hide-control" /> show
+      <p class="hidable">
+        media:
+        <span id="media-info"></span>
+      </p>
+      <p class="hidable">
+        inference:
+        <span id="inference-info"></span>
+      </p>
+      <div class="horizontal-layout debug-view hidable">
+        <div hidden="true">
+          <p><b>sample frame:</b></p>
+          <div id="sample-source" class="horizontal-layout outline"></div>
+        </div>
+        <div hidden="true">
+          <p><b>sample data:</b></p>
+          <div id="sample-data" class="horizontal-layout outline"></div>
+        </div>
+        <div hidden="true">
+          <p><b>inference:</b></p>
+          <div id="sample-inferred" class="horizontal-layout outline"></div>
+        </div>
+        <div hidden="true">
+          <p><b>depth:</b></p>
+          <div id="sample-depth" class="horizontal-layout outline"></div>
+        </div>
+        <div hidden="true">
+          <p><b>dib frame:</b></p>
+          <div id="dib-frame" class="horizontal-layout outline"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- control -->
+    <div id="control-section" class="outline">
+      <div id="control-info-wrapper" class="controls">
+        <h3>controls:</h3>
+        <div id="control-info"></div>
+      </div>
+    </div>
+
+    <!-- output -->
+    <div id="output-section" class="outline">
+      <h3>result:</h3>
+      <div id="output-container" class="horizontal-layout output-kinematoscope"></div>
+    </div>
+  </body>
+
+  <script type="module" src="kinematoscope.js"></script>
+</html>

@@ -1,0 +1,13 @@
+.output-kinematoscope {
+  max-width: fit-content;
+  align-items: center;
+}
+
+.output-kinematoscope > canvas {
+  /*
+  object-fit: fill;
+  */
+
+  /* "AR preserving" */
+  object-fit: scale-down;
+}

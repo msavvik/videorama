@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/src/style/common.css">
+  <link rel="stylesheet" href="/src/style/kinematoscope.css">
+  <link rel="stylesheet" href="/src/style/controls.css">
+</head>
+
+<body>
+  <table id="UiDepthImageBasedStereo" class="controls-table">
+    <thead>
+      <tr>
+        <th colspan="3">
+          <strong>NodeDepthImageBasedStereo</strong>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- control description -->
+      <tr>
+        <td>&emsp;<b>r / R:</b>&emsp;</td>
+        <td>reset to defaults.&emsp;</td>
+        <td>&emsp;</td>
+      </tr>
+      <tr>
+        <td>&emsp;<b>s / S:</b>&emsp;</td>
+        <td>swap left-right.&emsp;</td>
+        <td>&emsp;</td>
+      </tr>
+      <tr>
+        <td>&emsp;<b>e / E:</b>&emsp;</td>
+        <td>-/+ eye separation:&emsp;</td>
+        <td>
+          <span id="eyeSeparation-config"></span>
+          &emsp;
+        </td>
+      </tr>
+      <tr>
+        <td>&emsp;<b>d / D:</b>&emsp;</td>
+        <td>-/+ depth focus distance:&emsp;</td>
+        <td>
+          <span id="depthFocusDistance-config"></span>
+          &emsp;
+        </td>
+      </tr>
+      <tr>
+        <td>&emsp;<b>g / G:</b>&emsp;</td>
+        <td>-/+ depth gamma:&emsp;</td>
+        <td>
+          <span id="depthGamma-config"></span>
+          &emsp;
+        </td>
+      </tr>
+
+      <tr>
+        <td class="options-table-row-separator"></td>
+      </tr>
+
+      <!-- control values -->
+      <tr>
+        <td>&emsp;</td>
+        <td>left-right swap:&emsp;</td>
+        <td>
+          <span id="swapLeftRight"></span>
+          &emsp;
+        </td>
+      </tr>
+      <tr>
+        <td>&emsp;</td>
+        <td>eye separation:&emsp;</td>
+        <td>
+          <span id="eyeSeparation"></span>
+          &emsp;
+        </td>
+      </tr>
+      <tr>
+        <td>&emsp;</td>
+        <td>depth focus distance:&emsp;</td>
+        <td>
+          <span id="depthFocusDistance"></span>
+          &emsp;
+        </td>
+      </tr>
+      <tr>
+        <td>&emsp;</td>
+        <td>depth gamma:&emsp;</td>
+        <td>
+          <span id="depthGamma"></span>
+          &emsp;
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

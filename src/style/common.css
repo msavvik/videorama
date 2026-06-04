@@ -1,0 +1,37 @@
+.outline {
+  outline: solid gray;
+}
+
+.horizontal-layout {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.horizontal-layout > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0vw;
+  min-height: 0vh;
+}
+
+.hide-control:not(:checked) ~ .hidable {
+  visibility: hidden;
+  display: none;
+}
+
+.input-view {
+  max-width: 50%;
+}
+
+.input-view > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0vw;
+  min-height: 0vh;
+}
+
+.debug-view {
+  max-width: fit-content;
+  column-gap: 5px;
+}

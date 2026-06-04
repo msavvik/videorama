@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style/common.css" />
+    <link rel="stylesheet" href="/style/upscale.css" />
+  </head>
+
+  <body>
+    <h2>Upscale</h2>
+
+    <!-- controls -->
+    <div id="options-section" class="outline">
+      <h3>options:</h3>
+      <div id="options-container"></div>
+      <br />
+      <div id="url-source-container"></div>
+      <br />
+      <div>
+        <button id="start">start</button>
+        <button id="stop" disabled="true">stop</button>
+      </div>
+    </div>
+
+    <!-- input -->
+    <div id="input-section" class="outline">
+      <h3>source:</h3>
+      <div id="input-container" class="horizontal-layout input-view"></div>
+    </div>
+
+    <!-- debug -->
+    <div id="debug-section" class="outline">
+      <h3>debug:</h3>
+      <input id="debug-visible" type="checkbox" class="hide-control" /> show
+      <p class="hidable">
+        media:
+        <span id="media-info"></span>
+      </p>
+      <p class="hidable">
+        inference:
+        <span id="inference-info"></span>
+      </p>
+      <div class="horizontal-layout debug-view hidable">
+        <div hidden="true">
+          <p><b>source frame:</b></p>
+          <div id="sample-source" class="outline"></div>
+        </div>
+        <div hidden="true">
+          <p><b>sample data:</b></p>
+          <div id="sample-data" class="outline"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- control -->
+    <div id="control-section" class="outline">
+      <div id="control-info-wrapper" class="controls">
+        <h3>controls:</h3>
+        <div id="control-info"></div>
+      </div>
+    </div>
+
+    <!-- output -->
+    <div id="output-section" class="outline">
+      <h3>result:</h3>
+      <div id="output-container" class="horizontal-layout output-upscale">
+        <div>
+          <h4>upscale CSS:</h4>
+          <div id="upscale-browser" class=" "></div>
+        </div>
+        <div>
+          <h4>upscale inferred:</h4>
+          <div id="upscale-inferred" class=" "></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="module" src="upscale.js"></script>
+</html>

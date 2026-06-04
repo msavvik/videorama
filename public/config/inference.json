@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Wasm",
+    "sessionInit": {
+      "executionProviders": [
+        {
+          "name": "wasm"
+        }
+      ]
+    }
+  },
+  {
+    "name": "WebGl",
+    "sessionInit": {
+      "executionProviders": [
+        {
+          "name": "webgl"
+        }
+      ]
+    }
+  },
+  {
+    "name": "WebGPU",
+    "sessionInit": {
+      "executionProviders": [
+        {
+          "name": "webgpu"
+        }
+      ]
+    }
+  },
+  {
+    "name": "WebNN CPU",
+    "sessionInit": {
+      "executionProviders": [
+        {
+          "name": "webnn"
+        }
+      ]
+    }
+  },
+  {
+    "name": "WebNN GPU",
+    "sessionInit": {
+      "executionProviders": [
+        {
+          "name": "webnn",
+          "deviceType": "gpu",
+          "powerPreference": "high-performance"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "strictNullChecks": false,
+    "lib": ["ESNext", "WebWorker", "DOM"],
+    "target": "esnext",
+    "module": "Preserve",
+    "moduleResolution": "bundler"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/test/**/*"]
+}
