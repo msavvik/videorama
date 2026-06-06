@@ -29,6 +29,7 @@
     "node": "^24.11.0"
   },
   "dependencies": {
+    "@jax-js/jax": "^0.1.11",
     "onnxruntime-web": "1.26.0",
     "pixi.js": "8.18.1"
   }
