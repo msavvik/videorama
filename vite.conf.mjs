@@ -15,34 +15,20 @@ export default defineConfig({
       strict: false,
     }
   },
-
   optimizeDeps: {
-    // Exclude onnxruntime-web from optimisations.
-    // *.wasm files in onnxruntime-web package become unresolvable in dev server (http 404).
-    // Works for onnxruntime-web <= 1.18.0. Breaks for onnxruntime-web <= 1.21.1.
-    // Higher onnx version not tested.
     exclude: [
-      "onnxruntime-web/wasm",
-      "onnxruntime-web/webgl",
-      "onnxruntime-web/webgpu",
-      "onnxruntime-web/all",
-      "onnxruntime-web/training",
-      "onnxruntime-web",
+      "onnxruntime-web"
     ],
   },
-
   appType: "mpa",
   root: _srcDir,
-
   publicDir: _publicDir,
   cacheDir: _cacheDir,
-
   build: {
     copyPublicDir: true,
     minify: false,
     emptyOutDir: true,
   },
-
   plugins: [
     {
       name: "configure-response-headers",
@@ -60,7 +46,6 @@ export default defineConfig({
               res.setHeader("Content-Type", "application/json");
             }
           }
-
           next();
         });
       },
